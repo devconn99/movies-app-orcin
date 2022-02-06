@@ -1,52 +1,28 @@
-# WhatMovie
+# My Demo Project
 
-![Design preview WhatMovie](./whatmovie-preview.png)
+visit demo => https://movies-app-orcin.vercel.app/
 
-## Description
+is a simple App to show Movies List From 3rd Parties Data.
+Please note this requirements as well as your final project appraisal.
 
-WhatMovie is a website that provides information about all the movies that have been or will be released. You can search for your favorite movie by writing the name of the movie in the `search` section, you can also find movies by `category`, `trending`, and others. You can also see detailed information for each movie, some of the information contained in it such as rating, release date, overview, and also the video trailer.
+1. Using create-react-app
+2. Get Movies from http://www.omdbapi.com/ Get API_KEY from http://www.omdbapi.com/apikey.aspx using fetch or axios allowed.
+3. Simplied your react state into functional component using react-hooks applied (UseState, useEffect, useReducer).
+4. Functional Component Based, details
 
-## Teknologi
+- App.js — It will be the parent component for the other 3. It will also contain the function that handles the API request and it will have a function that calls the API during the component’s initial render.
+- Header.js — A simple component that renders the app header and accepts a title prop
+- Movie.js — It renders each movie. The movie object is simply passed into it as props.
+- Search.js — Contains a form with the input element and the search button, contains functions that handle the input element and resets the field, and also contains a function that calls the search function which is passed as props to it.
 
-This website was built using several technologies in it, including:
+It must be simple, so you must be careful with your syntax or code.Be Sure your app is suitable with the requirement above, because we do check your code/syntax with the requirement applied. So MAKE IT PERFECT !
 
-- [Next.js](https://nextjs.org/)
-- [Bootstrap](https://getbootstrap.com/)
-- [Axios](https://github.com/axios/axios)
+# Tools
 
-## API
+1. NextJS
+2. Bootstap 5
+3. Axios
 
-This website uses the API of [themoviedb.org](https://www.themoviedb.org/documentation/api), and of course requires `api-key` so that the API on this website can run. You can register first at [themoviedb.org](https://www.themoviedb.org/documentation/api) to get `api-key`. After getting the api key, you can enter the `api-key` in the `env` file.
+# Public API
 
-```env
-NEXT_PUBLIC_KEY="api_key=<your api_key>&language=en-US"
-# <your api_key> replaced with your own api-key
-```
-
-## Development
-
-If you want to try to do the development process, make sure your device has installed [nodejs](https://nodejs.org/en/).
-
-You can download this repository by clicking `Code` at the top, then selecting `Download ZIP` or if you want to clone this repository you can do this by
-
-```bash
-git clone https://github.com/fajarhidayatt/whatmovie.git
-```
-
-After that, install all the packages / dependencies contained in this project
-
-```bash
-npm install
-```
-
-Then run the development server
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in the browser you are using to see the results.
-
-## Demo
-
-You can see a demo of this website at [jarh-whatmovie.vercel.app](https://jarh-whatmovie.vercel.app)
+https://api.themoviedb.org/3

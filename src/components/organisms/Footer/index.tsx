@@ -3,7 +3,7 @@ export default function Footer() {
     <div className="footer">
       <div className="container-xxxl d-flex justify-content-center pt-4 pb-2 text-center">
         <p>
-          © 2021 Movies App.
+          © {new Date().getFullYear()} Movies App.
           <br className="d-block d-sm-none" />
           {' '}
           All rights reserved

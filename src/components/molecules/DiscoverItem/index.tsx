@@ -1,6 +1,6 @@
+import { getDetailMovie } from '@/services/data_api';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
-import { getDetailMovie } from '@/services/data_api';
 
 interface DiscoverItemProps {
   id: number;

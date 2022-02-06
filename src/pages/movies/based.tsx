@@ -1,11 +1,11 @@
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import ReactPaginate from 'react-paginate';
 import MovieItem from '@/components/molecules/MovieItem';
 import Footer from '@/components/organisms/Footer';
 import Navbar from '@/components/organisms/Navbar';
 import { getMovies } from '@/services/data_api';
 import { DetailMovieTypes } from '@/services/data_types';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import ReactPaginate from 'react-paginate';
 
 interface BasedProps {
   movies: DetailMovieTypes[];

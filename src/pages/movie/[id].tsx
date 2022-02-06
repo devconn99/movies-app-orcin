@@ -1,3 +1,4 @@
+import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 import SectionHeader from '@/components/organisms/DetailMovieContent/SectionHeader';
 import SectionInfo from '@/components/organisms/DetailMovieContent/SectionInfo';
 import SectionRecom from '@/components/organisms/DetailMovieContent/SectionRecom';
@@ -11,7 +12,6 @@ import {
   getVideoTrailer,
 } from '@/services/data_api';
 import { DetailMovieTypes } from '@/services/data_types';
-import { GetServerSideProps, GetServerSidePropsContext } from 'next';
 
 interface DetailMovieProps {
   movie: DetailMovieTypes;
@@ -29,7 +29,7 @@ export default function DetailMovie(props: DetailMovieProps) {
   return (
     <>
       {/* <div className="d-none"> */}
-        <Navbar />
+      <Navbar />
       {/* </div> */}
       <div className="detail-movie mb-5">
         <div className="section-backdrop">

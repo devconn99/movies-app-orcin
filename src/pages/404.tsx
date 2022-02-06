@@ -1,6 +1,6 @@
-import ButtonTheme from '@/components/organisms/Navbar/ButtonTheme';
 import Image from 'next/image';
 import Link from 'next/link';
+import ButtonTheme from '@/components/organisms/Navbar/ButtonTheme';
 
 export default function PageNotFound() {
   return (
